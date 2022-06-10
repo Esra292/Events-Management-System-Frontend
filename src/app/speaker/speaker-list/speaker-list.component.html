@@ -1,0 +1,39 @@
+<h5 class="font">Speakers' List</h5>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="scrollable" id="center">
+                <table class="table table-bordered table-hover table-responsive font1">
+                    <thead class="
+                    text-center table-info">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>City</th>
+                            <th>Street</th>
+                            <th>Building</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of speakers">
+                            <td>{{item._id}}</td>
+                            <td>{{item.UserName}}</td>
+                            <td>{{item.Email}}</td>
+                            <td>{{item.Password}}</td>
+                            <td>{{item.City}}</td>
+                            <td>{{item.Street}}</td>
+                            <td>{{item.Building}}</td>
+                            <td>
+                                <a class="btn btn-info" [routerLink]="['/speaker/details',item._id]">Details</a>
+                                <a class="btn btn-warning" [routerLink]="['/speaker/edit',item._id]">Edit</a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

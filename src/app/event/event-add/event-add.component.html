@@ -1,0 +1,24 @@
+<div class="center">
+    <div class="form-group">
+      <label for="exampleInputUsername1">Title</label>
+      <input class="form-control" type="text" placeholder="Title" [(ngModel)]="event.title"> 
+    </div>
+    <div class="form-group">
+        <label for="exampleInputUsername1">Date</label>
+        <input class="form-control" type="text" placeholder="Date" [(ngModel)]="event.eventDate"> 
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUsername1">Main Speaker Id</label>
+        <input class="form-control" type="text" placeholder="Main Speaker Id" [(ngModel)]="event.mainSpeakerId"> 
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUsername1">Other Speakers' Ids</label>
+        <input class="form-control" type="text" placeholder="Other Speakers Ids" [(ngModel)]="event.otherSpeakersIds"> 
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUsername1">Students' Ids</label>
+        <input class="form-control" type="text" placeholder="Students' Ids" [(ngModel)]="event.studentsIds"> 
+      </div>
+     
+      <button type="submit" class="btn btn-primary" id="btn" (click)="Save()">Submit</button>
+  </div>

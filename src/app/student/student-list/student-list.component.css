@@ -1,0 +1,21 @@
+#center{
+    position: fixed;
+    top: 15%;
+    left: 16%;
+    width: 80rem;
+    height:40rem;
+}
+.scrollable{
+    height:800px;
+    overflow: scroll;
+}
+.font{
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    padding-left: 50rem;
+    font-weight: bolder;
+    font-size:xx-large;
+    padding-top: 1rem;
+}
+#space{
+    padding:0.8rem ; margin:0.5rem;
+}

@@ -1,0 +1,20 @@
+<table class="table" id="center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{std._id}}</td>
+            <td>{{std.Email}}</td>
+            <td>{{std.Password}}</td>
+            <td>
+            <button [routerLink]="['/student/edit',std._id]" class="btn btn-primary">Edit</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>

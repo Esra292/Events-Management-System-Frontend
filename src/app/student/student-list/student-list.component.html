@@ -1,0 +1,30 @@
+<h5 class="font">Students' list</h5>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="scrollable" id="center">
+                <table class="table table-bordered table-hover table-responsive ">
+                    <thead class="text-center ">
+                        <tr>
+                            <th>Id</th>
+                            <th>Email</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of students; let y=index">
+                            <td>{{item._id}}</td>
+                            <td>{{item.Email}}</td>
+                            <td>
+                                <a class="btn btn-secondary" id="space" [routerLink]="['/student/details',item._id]">Details</a>
+                                <a class="btn btn-warning" id="space" [routerLink]="['/student/edit',item._id]">Edit</a> 
+                                <a class="btn btn-danger" id="space" (click)="Remove(item._id,y)">Remove</a> 
+                            </td>                
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

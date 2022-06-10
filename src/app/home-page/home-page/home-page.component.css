@@ -1,0 +1,16 @@
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.side{
+    display: inline;
+    padding: 5rem;
+}
+.font{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    padding-left: 20rem;
+    padding-top: 6rem;
+}

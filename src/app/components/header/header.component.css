@@ -1,0 +1,28 @@
+#header{
+    height: 4rem;
+    background-color: black;
+    align-items: center;
+}
+.font{
+    width:526px;
+    height:32px; 
+    background-position:top; 
+    background-repeat:repeat-x;
+    color: white;
+    width: 11rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+}
+#center{
+     position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 15rem;
+    height:50rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+}

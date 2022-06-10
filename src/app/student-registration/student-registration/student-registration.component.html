@@ -1,0 +1,17 @@
+   <div class="center">
+    <div class="form-group">
+      <label for="exampleInputUsername1">Id</label>
+      <input class="form-control" type="text" placeholder="Id" [(ngModel)]="std._id"> 
+    </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="std.Email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="std.Password">
+        </div>
+      <button type="submit" class="btn btn-primary" id="btn" (click)="Register()">Submit</button>
+  </div>
+   

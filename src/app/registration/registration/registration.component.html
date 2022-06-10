@@ -1,0 +1,10 @@
+<div class="center">
+  <h5 class="font">Welcome!</h5>
+  <h1 class="font">Register as:</h1>
+  <select class="form-select" aria-label="Default select example"  [(ngModel)]="role">
+      <option selected>Open this select menu</option>
+      <option><a [routerLink]="['stregister']" class="font">Student</a></option>
+      <option >Speaker</option>
+    </select>
+    <button (click)="Ok()" class="btn btn-primary">Ok</button>
+</div>

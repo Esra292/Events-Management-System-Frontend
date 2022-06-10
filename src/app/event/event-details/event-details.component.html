@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-16">
+            <div class="scrollable" id="center">
+                <table class="table table-hover table-responsive ">
+                    <thead class="
+                    text-center ">
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Main Speaker Id</th>
+                            <th>Other Speakers</th>
+                            <th>Students' Ids</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{event._id}}</td>
+                            <td>{{event.title}}</td>
+                            <td>{{event.eventDate | date:'fullDate'}}</td>
+                            <td>{{event.mainSpeakerId}}</td>
+                            <td>
+                                <ul *ngFor="let i of event.otherSpeakersIds">
+                                    <li>{{i}}</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <li  *ngFor="let i of event.studentsIds">{{i}}</li>
+                            </td>                       
+                        </tr>
+                        <tr>
+                            <a class="btn btn-info" [routerLink]="['/event/details',event._id]">Details</a>
+                            <a class="btn btn-info" [routerLink]="['/event/edit',event._id]">Edit</a> 
+                        </tr>   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

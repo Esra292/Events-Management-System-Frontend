@@ -1,0 +1,30 @@
+<div class="center">
+    <div class="form-group">
+      <label for="exampleInputUsername1">Title</label>
+      <input class="form-control" type="text" placeholder="Title" [(ngModel)]="event.title"> 
+    </div>
+    <div class="form-group">
+        <label for="exampleInputUsername1">Date</label>
+        <input class="form-control" type="text" placeholder="Date" [(ngModel)]="event.eventDate"> 
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUsername1">Main Speaker Id</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="event.mainSpeakerId">
+            <option *ngFor="let y of speakersIds">{{y}}</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUsername1">Other Speakers' Ids</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="event.otherSpeakersIds">
+            <option *ngFor="let y of speakersIds">{{y}}</option>
+        </select>
+    </div>
+      <div class="form-group">
+        <label for="exampleInputUsername1">Students' Ids</label>
+        <select class="form-select" aria-label="Default select example"   [(ngModel)]="event.studentsIds" (click)="concat()">
+            <option *ngFor="let y of studentsIds">{{y}}</option>
+          </select> 
+    </div>
+     
+      <button type="submit" class="btn btn-primary" id="btn" (click)="Save()">Submit</button>
+  </div>
